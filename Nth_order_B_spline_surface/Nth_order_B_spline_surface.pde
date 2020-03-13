@@ -11,6 +11,8 @@ int NI = 0;
 int NJ = 0;
 
 void setup(){
+  //fullScreen(P3D);
+  //strokeWeight(5);
   size(500, 500, P3D);
   NI = width/pSize;
   NJ = height/pSize;
@@ -36,9 +38,9 @@ void draw(){
   translate(-width/2, 0, -height/2);
   stroke(0);
   noFill();
-  for(int j = 0; j < NI; j++){
+  for(int j = 0; j < NJ; j++){
     beginShape(TRIANGLE_STRIP);
-    for(int i = 0; i <= NJ; i++){
+    for(int i = 0; i <= NI; i++){
       vertex(controlGrid[i][j]);
       vertex(controlGrid[i][j+1]);
     }

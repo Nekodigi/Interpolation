@@ -1,7 +1,7 @@
 void Calculate(){
   float incrementI, u, incrementJ, v;//u,v is position on surface
-  incrementI = (NI - DI + 2) / ((float)resolutionI);
-  incrementJ = (NI - DI + 2) / ((float)resolutionJ);
+  incrementI = (NI - DI + 2) / ((float)resolutionI - 1+0.001);
+  incrementJ = (NJ - DJ + 2) / ((float)resolutionJ - 1+0.001);
   
   u = 0;
   for(int i = 0; i < resolutionI; i++){
