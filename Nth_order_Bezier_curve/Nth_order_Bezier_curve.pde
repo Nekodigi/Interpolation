@@ -1,3 +1,4 @@
+//based on this site https://en.wikipedia.org/wiki/B%C3%A9zier_curve
 ArrayList<PVector> B = new ArrayList<PVector>();
 
 void setup(){

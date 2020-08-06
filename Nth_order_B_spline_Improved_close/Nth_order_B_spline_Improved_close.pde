@@ -1,7 +1,7 @@
 
 ArrayList<PVector> P = new ArrayList<PVector>();
 int[] knots;
-int DI = 4;//nth order
+int DI = 3;//nth order
 boolean close = true;
 
 void setup() {
